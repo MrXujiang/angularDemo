@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="home-wrap">
+    <section class="content">
+      <div class="has-done">
+        <div class="title">我已去过：</div>
+        <div class="visit-list">
+          <button
+            *ngFor="let item of hasDoneList"
+            class="has-btn"
+            mat-raised-button
+            [matTooltip]="item.desc"
+            aria-label="按钮当聚焦或者经过时展示工具提示框">
+            {{ item.name }}
+          </button>
+        </div>
+      </div>
+      <div class="has-done">
+        <div class="title">未来规划：</div>
+        <div class="future-list">
+          <form [formGroup]="checkoutForm">
+            <div class="form-control">
+              <label>地点：</label>
+              <input type="text" formControlName="name">
+            </div>
+            
+            <div class="form-control">
+              <label>预算：</label>
+              <input type="number" formControlName="price">
+            </div>
+
+            <div class="form-control">
+              <label>日期：</label>
+              <input type="date" formControlName="date">
+            </div>
+
+            <div class="form-control">
+              <button mat-raised-button color="primary" class="submit-btn" type="submit" (click)="onSubmit(checkoutForm.value)">提交</button>
+              <button mat-raised-button color="accent" class="reset-btn" (click)="onReset()">重置</button>
+            </div>    
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="map-wrap" id="js_hover_map"></section>
+  </div>

@@ -1,0 +1,46 @@
+.position-list {
+    display: flex;
+    flex-wrap: wrap;
+    .position-item {
+        position: relative;
+        display: inline-block;
+        margin-left: 18px;
+        margin-top: 18px;
+        width: 200px;
+        min-height: 200px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,.1);
+        span {
+            display: block;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+
+        .date {
+            color: #999;
+            line-height: 3em;
+        }
+
+        .desc {
+            color: #999;
+        }
+
+        .price {
+            position: absolute;
+            bottom: 20px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .is-new {
+            position: absolute;
+            padding: 2px 4px;
+            top: 0;
+            right: 0;
+            color: #fff;
+            background-color: red;
+        }
+    }
+}

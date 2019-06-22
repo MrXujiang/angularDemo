@@ -1,0 +1,25 @@
+.nav-bar {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #3f51b5;
+    box-shadow: 0 0 20px rgba(0,0,0,.8);
+    .logo {
+        margin-right: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    a {
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+        &:hover {
+            color: #f0f0f0;
+        }
+    }
+}

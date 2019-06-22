@@ -1,0 +1,18 @@
+<div>
+    <span *ngFor="let item of items" class="cart-item">{{item}}</span><br/>
+    <!-- async用来等待异步任务完成才渲染组件 -->
+    <!-- | currency 将数字转化为美元符号 -->
+    <span *ngFor="let price of prices | async" class="cart-item">{{price.price | currency}}</span>
+</div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <div>
+            <label>Name</label>
+            <input type="text" formControlName="name">
+        </div>
+        
+        <div>
+            <label>Address</label>
+            <input type="text" formControlName="address">
+        </div>
+    <button class="button" type="submit">Purchase</button>
+</form>

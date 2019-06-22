@@ -1,0 +1,11 @@
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .main {
+        flex: 1;
+        overflow: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

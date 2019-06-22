@@ -1,0 +1,51 @@
+.home-wrap {
+    display: flex;
+    .content {
+        margin-right: 20px;
+        width: 400px;
+        .has-done {
+            margin-bottom: 40px;
+            .title {
+                line-height: 2.4em;
+                border-bottom: 1px dashed #ccc;
+            }
+
+            .visit-list {
+                margin-top: 18px;
+                .has-btn {
+                    margin-right: 18px;
+                    margin-bottom: 18px;
+                }
+            }
+
+            .future-list {
+                margin-top: 20px;
+                .form-control {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    label {
+                        display: inline-block;
+                        width: 6em;
+                    }
+
+                    input {
+                        width: 240px;
+                        display: inline-block;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid #ccc;
+                    }
+
+                    button {
+                        margin-right: 20px;
+                        width: 120px;
+                    }
+                }  
+            }
+        }
+    }
+    
+    .map-wrap {
+        flex: 1;
+    }
+}

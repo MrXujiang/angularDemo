@@ -1,0 +1,12 @@
+<div class="detail">
+    <h1>新大陆</h1>
+    <div class="position-list">
+        <div class="position-item" *ngFor="let item of list">
+            <span class="is-new" *ngIf="!item.hasDone">新</span>
+            <span class="title">{{item.name}}</span>
+            <span class="date">{{item.date}}</span>
+            <span class="desc">{{item.desc}}</span>
+            <span class="price">预算：{{item.price}}</span>
+        </div>
+    </div>
+</div>
